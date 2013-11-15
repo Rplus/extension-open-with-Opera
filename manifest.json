@@ -1,0 +1,33 @@
+{
+  "name": "Open in Opera",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "The first extension that I made.",
+  "icons": {
+    "32": "images/icon32.png",
+    "64": "images/icon64.png",
+    "128": "images/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon19.png",
+      "38": "images/icon38.png"
+    }
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "plugins": [ {
+      "path": "plugin/npsimpleGetPlugin.dll",
+      "public": false
+   }, {
+      "path": "plugin/libsimpleGetPlugin.so",
+      "public": false
+   }, {
+      "path": "plugin/libsimpleGetPlugin64.so",
+      "public": false
+   } ],
+  "background": {
+    "page": "open.html"
+  }
+}
