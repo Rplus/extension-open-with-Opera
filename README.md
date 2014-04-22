@@ -13,6 +13,15 @@ This extension is refer to some Google extensions:
 
 ## change log
 
-v.0.1
-* open with Opera at Linux
-* Opera 路徑暫時寫死
+* v.0.2 (2014-04-22)
+
+    * 加入右鍵選單：  
+      針對 link 與 page 可快速開至 Opera
+
+        * link: 不關當前頁
+        * page: 會關掉當前頁
+
+* v.0.1
+
+    * open with Opera at Linux
+    * Opera 路徑暫時寫死
