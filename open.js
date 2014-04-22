@@ -26,3 +26,20 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     chrome.tabs.remove(tab.id);
     // console.log(tab);
 });
+
+chrome.contextMenus.create({
+    'title': 'open in opera',
+    'contexts': ['page', 'link'],
+    'onclick': function (info, tab) {
+        console.log(info , tab);
+
+        var url = info.linkUrl || tab.url;
+
+        openInOpera.callApplication("opera -newtab " , url);
+
+        if (!info.linkUrl) {
+            chrome.tabs.remove(tab.id);
+        }
+
+    }
+});

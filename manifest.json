@@ -15,6 +15,7 @@
     }
   },
   "permissions": [
+    "contextMenus",
     "activeTab"
   ],
   "plugins": [ {
